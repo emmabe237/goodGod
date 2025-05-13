@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 30px;
+            color: #333;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .welcome-title {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .welcome-subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .feature-title {
+            color: #3498db;
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .feature-text {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .quick-start {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #eef7fd;
+            border-radius: 8px;
+            border: 1px solid #d1e8f7;
+        }
+
+        .quick-start-title {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .quick-start-list {
+            list-style: none;
+        }
+
+        .quick-start-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .quick-start-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .content-container {
+                padding: 20px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .welcome-title {
+                font-size: 24px;
+            }
+
+            .welcome-subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="welcome-section">
+            <h1 class="welcome-title">Welcome to Our Learning Portal</h1>
+            <p class="welcome-subtitle">Your gateway to academic excellence and professional development</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-title">Online Lectures</div>
+                <p class="feature-text">Access high-quality lecture materials, presentations, and recorded sessions anytime, anywhere.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-title">Assignment Portal</div>
+                <p class="feature-text">Submit assignments, receive feedback, and track your academic progress efficiently.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-title">Learning Resources</div>
+                <p class="feature-text">Download study materials, access additional readings, and explore supplementary content.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-title">Course Information</div>
+                <p class="feature-text">Find detailed information about courses, schedules, and important announcements.</p>
+            </div>
+        </div>
+
+        <div class="quick-start">
+            <h2 class="quick-start-title">Quick Start Guide</h2>
+            <ul class="quick-start-list">
+                <li>Navigate through courses using the menu on the left</li>
+                <li>Access your assignments and submission deadlines</li>
+                <li>Download course materials and resources</li>
+                <li>Check important announcements and updates</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
